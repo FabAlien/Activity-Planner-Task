@@ -1,11 +1,12 @@
 import { createRoot } from 'react-dom/client'
-import Header from "./components/Header.jsx";
+import "./index.css"
+import Header from "./components/Header.jsx"
 import { exampleActivities } from "./test.js"
 
 function ExampleCard ({ example }) {
   const { id, title, description, category, date, priority } = example;
   return (
-    <div style={{border: "black 1px solid", gap: "1px", padding: "1rem"}}>
+    <div className="exampleCard">
       <p>ID: {id}</p>
       <p>Name: {title}</p>
       <p>Description: {description}</p>

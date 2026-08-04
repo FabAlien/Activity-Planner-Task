@@ -1,0 +1,25 @@
+:root {
+    --primary-bg-color: #0A141E;
+    --surface-bg-color: #14293C;
+    --elevated-bg-color: #1B3550;
+    --inset-bg-color: #0E1C2B;
+
+    --success-bg-color: rgb(94 255 13 / 0.12);
+    --danger-bg-color: rgb(233 117 21 / 0.16);
+    --warning-bg-color: rgb(230 159 0 / 0.14);
+    --info-bg-color: rgb(86 180 233 / 0.14);
+
+    --border-color: #2A4A6B;
+
+    --success-color: #5EFF0D;
+    --danger-color: #E97515;
+    --warning-color: #E69F00;
+    --info-color: #56B4E9;
+
+    --branding-color: #FF3838;
+    --branding-hover-color: #E62E2E;
+    --branding-text-color: #0A141E;
+
+    --text-color: #ffffff;
+    --text-muted-color: #A3B8CC;
+}

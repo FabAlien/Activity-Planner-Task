@@ -29,6 +29,16 @@
 
     --radius-panel: 12px;
     --shadow-panel: 0 2px 12px rgba(0, 0, 0, 0.28), 0 1px 2px rgba(0, 0, 0, 0.15);
+
+    --sp-1: 4px;
+    --sp-2: 8px;
+    --sp-3: 12px;
+    --sp-4: 16px;
+    --sp-5: 20px;
+    --sp-6: 24px;
+    --sp-8: 32px;
+    --sp-10: 40px;
+    --page-padding: clamp(20px, 4vw, 40px);
 }
 
 body {
@@ -45,12 +55,61 @@ body {
     padding: 0;
 }
 
-.exampleCard {
+#site-display {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.site-halves {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.activity-display {
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+}
+
+.activity-card {
     border: var(--border-color) 1px solid;
     font-size: 16px;
     gap: 1px;
     padding: 1rem;
     border-radius: var(--radius-panel);
-    background-color: var(--elevated-bg-color);
+    background-color: var(--surface-bg-color);
     box-shadow: var(--shadow-panel);
+}
+
+.panel {
+    background-color: var(--surface-bg-color);
+    border-radius: var(--radius-panel);
+    box-shadow: var(--shadow-panel);
+}
+
+.panel > .panel-header {
+    padding: 10px var(--sp-4);
+    border-bottom: 1px solid var(--border-color);
+    font-family: var(--font-mono);
+    font-size: 11.5px;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--text-muted-color);
+}
+
+.panel > .panel-body {
+    padding: var(--sp-4);
+}
+
+@media (max-width: 768px) {
+    #siteDisplay {
+        flex-direction: column;
+    }
+    .siteHalves {
+        width: 100%;
+    }
 }
